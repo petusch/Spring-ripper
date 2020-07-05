@@ -6,11 +6,11 @@
 
     <context:annotation-config/>
 
-    <bean class="main.java.quoters.ProfilingHandlerBeanPostProcessor"/>
+    <bean class="quoters.ProfilingHandlerBeanPostProcessor"/>
 
-    <bean class="main.java.quoters.InjectRandomIntAnnotationBeanPostProcessor"/>
+    <bean class="quoters.InjectRandomIntAnnotationBeanPostProcessor"/>
 
-    <bean class="main.java.quoters.TerminatorQuoter" id="termiantorQuoter">
+    <bean class="quoters.TerminatorQuoter" id="termiantorQuoter">
         <property name="message" value="Hello world"/>
     </bean>
 

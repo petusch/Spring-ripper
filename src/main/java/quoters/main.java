@@ -1,10 +1,10 @@
-package main.java.quoters;
+package quoters;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class main {
     public static void main(String[] args) throws InterruptedException {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("main/resources/context.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
 
         while (true) {
             Thread.sleep(200);

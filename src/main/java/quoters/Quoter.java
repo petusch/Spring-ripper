@@ -1,4 +1,4 @@
-package main.java.quoters;
+package quoters;
 
 public interface Quoter {
     void sayQuote();
