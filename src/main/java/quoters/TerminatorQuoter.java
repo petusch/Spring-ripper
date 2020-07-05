@@ -2,9 +2,10 @@ package main.java.quoters;
 
 
 
-//import org.springframework.stereotype.Component;
+
 import javax.annotation.PostConstruct;
-//@Component
+
+@Profiling
 public class TerminatorQuoter implements Quoter {
 
     @InjectRandomInt(min=2,max=7)
