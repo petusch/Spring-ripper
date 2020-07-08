@@ -6,14 +6,12 @@
 
     <context:annotation-config/>
 
-    <bean class="quoters.PostProxyInvokerContextListener"/>
+    <bean class="calculator.ProfilingBeanPostProcessor"/>
 
-    <bean class="quoters.ProfilingHandlerBeanPostProcessor"/>
+<!--    <bean class="calculator.Profiling2ContextListener"/>-->
 
-    <bean class="quoters.InjectRandomIntAnnotationBeanPostProcessor"/>
-
-    <bean class="quoters.TerminatorQuoter" id="termiantorQuoter">
-        <property name="message" value="Hello world"/>
+    <bean class="calculator.CalculatorTerminator">
+        <property name="firstNumber" value = "2"/>
+        <property name="secondNumber" value ="10"/>
     </bean>
-
 </beans>
